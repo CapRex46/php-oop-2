@@ -39,7 +39,7 @@ class User extends Card {
     public function setDiscountCode($registered)
     {
         if($registered) {
-            $this->discouncodet = true;
+            $this->discouncode = true;
             return $this;
         } 
 
