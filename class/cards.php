@@ -27,9 +27,9 @@ class Card {
     }
     public function setExpiringDate($date)
     {
-        $today = date('Y-m-d');
+        $today = date('y-m');
         $expire = date_create($date);
-        if(date_format($expire, "Y-m-d") < $today) {
+        if(date_format($expire, "y-m") < $today) {
             $this->date = "La tua carta è scaduta!";
             return $this; 
         }

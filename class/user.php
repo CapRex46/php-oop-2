@@ -18,7 +18,7 @@ class User extends Card {
         $this->setDiscountCode($userDetails["userRegistered"]);
         $this->setNumber($userDetails["userCardNumber"]);
         $this->setExpiringDate($userDetails["userCardExpire"]);
-        $this->setCCV($userDetails["userCardCVV"]);
+        $this->setCCV($userDetails["userCVV"]);
 
     }
     public function getRegistered()
