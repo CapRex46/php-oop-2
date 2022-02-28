@@ -43,7 +43,7 @@ class User extends Card {
             return $this;
         } 
 
-        $this->discount = false;
+        $this->discountcode = false;
         return $this;
 
     }
