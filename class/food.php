@@ -25,7 +25,6 @@ class Food extends Products {
     public function setType($type)
     {
         $this->type = $type;
-
         return $this;
     }
 
@@ -37,7 +36,6 @@ class Food extends Products {
     public function setBrand($brand)
     {
         $this->brand = $brand;
-
         return $this;
     }
 
@@ -50,7 +48,6 @@ class Food extends Products {
     {   
         if (is_int($weight)) {
             $this->weight = $weight;
-    
             return $this;
         }
     }

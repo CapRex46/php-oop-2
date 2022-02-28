@@ -17,7 +17,6 @@ class Products {
     public function setAvailable($available)
     {
         $this->available = $available;
-
         return $this;
     }
 
@@ -29,7 +28,6 @@ class Products {
     public function setPrice($price)
     {
         $this->price = $price;
-
         return $this;
     }
 
@@ -41,7 +39,6 @@ class Products {
     public function setDesc($desc)
     {
         $this->description = $desc;
-
         return $this;
     }
 
@@ -53,7 +50,6 @@ class Products {
     public function setTitle($title)
     {
         $this->title = $title;
-
         return $this;
     }
 }
