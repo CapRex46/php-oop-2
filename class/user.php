@@ -8,14 +8,14 @@ class User extends Card {
     protected string $surname;
     protected string $email;
     protected bool $registered;
-    protected bool $discount;
+    protected bool $discountcode;
 
     function __construct(array $userDetails) {
         $this->setName($userDetails["userName"]);
         $this->setSurname($userDetails["userSurname"]);
         $this->setEmail($userDetails["userEmail"]);
         $this->setRegistered($userDetails["userRegistered"]);
-        $this->setDiscount($userDetails["userRegistered"]);
+        $this->setDiscountCode($userDetails["userRegistered"]);
         $this->setNumber($userDetails["userCardNumber"]);
         $this->setExpiringDate($userDetails["userCardExpire"]);
         $this->setCCV($userDetails["userCardCVV"]);
@@ -31,15 +31,15 @@ class User extends Card {
         return $this;
     }
 
-    public function getDiscount()
+    public function getDiscountCode()
     {   
-        return $this->discount;
+        return $this->discountcode;
     }
 
-    public function setDiscount($registered)
+    public function setDiscountCode($registered)
     {
         if($registered) {
-            $this->discount = true;
+            $this->discouncodet = true;
             return $this;
         } 
 
